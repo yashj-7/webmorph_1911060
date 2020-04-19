@@ -1,0 +1,39 @@
+    .bg-custom{
+                background-color: #203345;
+            }
+    .link-custom:hover{
+                color: white!important;
+            }
+      #search-btn{
+                   border: none;
+                   margin: 0;
+                   padding: 0;
+                   position: relative;
+                   right:3px;
+                   margin-right: 0!important;
+
+               }
+     #searchbox{
+                   margin-right: 0!important;
+                   background-color: #455562;
+                   border: none;
+                   width: 60%;
+                   height: 35px;
+               }
+     #searchbox::placeholder{
+                   color: darkgrey;
+                   font-size:110%;
+
+               }
+#user-btn{
+    border: none;
+    padding: 0;
+    margin-right: 30px;
+    margin-left: 0;
+    position: relative;
+    right: 10px;
+}
+     .custom-margin{
+                  margin-right:3px;
+                   font-size: 110%
+               }
