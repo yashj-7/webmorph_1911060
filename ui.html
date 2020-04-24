@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="ui.css">
 
-    <title>Hello, world!</title>
+    <title>Flux-1</title>
   </head>
   <body>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item custom-margin">
-                    <a class="nav-link link-custom" href="">Home</a>
+                <li class="nav-item custom-margin active-link">
+                    <a id="link1" class="nav-link link-custom" href="">Home</a>
                 </li>
-                <li class="nav-item custom-margin">
+                <li id="link2" class="nav-item custom-margin">
                     <a class="nav-link link-custom" href="">Movies</a>
                 </li>
-                <li class="nav-item custom-margin">
+                <li id="link3" class="nav-item custom-margin">
                     <a class="nav-link link-custom" href="">TV shows</a>
                 </li>
-                <li class="nav-item custom-margin">
+                <li id="link4" class="nav-item custom-margin">
                     <a class="nav-link link-custom" href="">Kids</a>
                 </li>
             </ul>
@@ -47,14 +47,22 @@
       <div id="main-wrapper">
          <div class="container-fluid">
              <div class="row">
-                 <div class="col-sm-2 floater">
-              <img  src="images/money%20heist%20poster.jpg" width="270px" height="440px">
+                 <div class="col-sm-3">
+              <img class="shad" src="images/money%20heist%20poster.jpg" width="100%" height="100%">
                  </div>
-                 <div class="col-sm-1"></div>
-                 <div class="col-sm-9 floater">
-                 <iframe src="https://www.youtube.com/embed/p_PJbmrX4uk" allowfullscreen width="100%" height="100%"></iframe>
+                 <div class="col-sm-9 ">
+                     
+                  <div id="card0" class="card">
+                       
+                      <img src="images/moneyheist-banner.jfif" width="100%" height="100%">
+                    
+			         <div class="card-alt">
+				<h3><img src="images/play%201.png" width="60px" height="60px">"Money Heist : Part 4"</h3>
+				<p>Lives are on the line as the professor's plan begins to unravel and the thieves must fend off enemies from both inside and outside the bank of spain</p>
+			         </div>
+		          </div>
                  </div>
-             </div>
+             </div>    
           </div>
             <div class="section">
             <span class="head1">Fan Favourites</span>
@@ -65,8 +73,8 @@
                         <div class="card img" >
                           <img id="card1" class="card-img-top" src="images/la-casa.png" alt="Card image cap">
                             <div id="bdy1" class="card-body">
-                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">Money Heist </h5>
-                            <p class="card-text">Money Heist  is a Spanish heist crime drama television series created by Álex Pina. The series traces two long-prepared heists led by the Professor and his team.</p>
+                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">&nbsp Money Heist <img class="plus" src="images/plus.PNG" width="7%"></h5>
+                            <p class="card-text">Money Heist  is a Spanish heist crime drama television series created by Álex Pina. The series traces two long-prepared heists led by the Professor and his team.<img class="ua" src="images/ua.PNG" width="15%"></p>
                                 <span class="text-muted below-text">4 seasons | 2020 <img src="images/star.PNG" width="14px" height="12px"> 4.5</span>
                             </div>
                         </div>
@@ -75,9 +83,10 @@
                         <div class="card img" >
                           <img id="card2" class="card-img-top" src="images/inception.jpg" alt="Card image cap">
                             <div id="bdy2" class="card-body">
-                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">INCEPTION</h5>
-                            <p class="card-text">Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with his wife, Emma Thomas. </p>
-                                <span class="text-muted below-text">4 seasons | 2020 <img src="images/star.PNG" width="14px" height="12px"> 4.8</span>
+                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">&nbsp Inception
+                                <img class="plus" src="images/plus.PNG" width="7%"></h5>
+                            <p class="card-text">Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with his wife, Emma Thomas. <img class="ua" src="images/ua.PNG" width="15%"></p>
+                                <span class="text-muted below-text">2 hr 20 min | 2018 <img src="images/star.PNG" width="14px" height="12px"> 4.8</span>
                             </div>
                         </div>                       
                     </div>
@@ -85,9 +94,9 @@
                          <div class="card img" >
                           <img id="card3" class="card-img-top" src="images/gullyboy.jpg" alt="Card image cap">
                             <div id="bdy3" class="card-body">
-                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">Gully Boy </h5>
-                            <p class="card-text">Inspired by the lives of Indian street rappers Divine and Naezy, the film is a coming-of-age story about an aspiring street rapper from the Dharavi slums of Mumbai</p>
-                                <span class="text-muted below-text">4 seasons | 2020 <img src="images/star.PNG" width="14px" height="12px"> 4.5</span>
+                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">&nbsp &nbsp Gully Boy <img class="plus" src="images/plus.PNG" width="7%"></h5>
+                            <p class="card-text">Inspired by the lives of Indian street rappers Divine and Naezy, the film is a coming-of-age story about an aspiring street rapper from  slums of Mumbai. <img class="ua" src="images/ua.PNG" width="15%"></p>
+                                <span class="text-muted below-text">2 hr 30 mins | 2018 <img src="images/star.PNG" width="14px" height="12px"> 4.5</span>
                             </div>
                         </div>
                     </div>
@@ -95,34 +104,203 @@
                          <div class="card img" >
                           <img id="card4" class="card-img-top" src="images/joker.jpg" alt="Card image cap">
                             <div id="bdy4" class="card-body">
-                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">Joker</h5>
-                            <p class="card-text">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. </p>
-                                <span class="text-muted below-text">4 seasons | 2020 <img src="images/star.PNG" width="14px" height="12px"> 4.5</span>
+                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px"> &nbsp Joker <img class="plus" src="images/plus.PNG" width="7%"></h5>
+                            <p class="card-text">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.
+                                <img class="ua" src="images/ua.PNG" width="15%"></p>
+                                <span class="text-muted below-text">3 hr 10 mins | 2019 <img src="images/star.PNG" width="14px" height="12px"> 4.5</span>
                             </div>
                         </div>
                     </div>
                 </div>    
             </div>
           <div class="section">
-            <span class="head1">Bollywood Binge</span>
+              <span class="head1">Bollywood Binge</span>
         </div>
            <div class="container-fluid">
                 <div class="row">
-                    <div  class="col-sm-3 img">
-                       <img src="images/yjhd.jpg" width="100%" height="80%">
+                    <div  class="col-sm-3 image1">
+                    
+                       <img class="shad" src="images/yjhd.jpg" width="100%" height="80%">
+                    <div class="play">
+                        <img src="images/play%201.png" width="40%">
+                        </div>    
                     </div>
-                     <div class="col-sm-3 img">
-                        <img src="images/znmd.jpg" width="100%" height="80%">            
+                     <div class="col-sm-3 image1 ">
+                        <img class="shad" src="images/znmd.jpg" width="100%" height="80%">
+                          <div class="play">
+                        <img src="images/play%201.png" width="40%">
+                        </div>
                     </div>
-                     <div class="col-sm-3 img">
-                        <img src="images/ddlj.jpeg" width="100%" height="80%">
+                     <div class="col-sm-3 image1">
+                        <img class="shad" src="images/ddlj.jpeg" width="100%" height="80%">
+                          <div class="play">
+                        <img src="images/play%201.png" width="40%">
+                        </div>
                     </div>
-                     <div class="col-sm-3 img">
-                        <img src="images/bmb.jpeg" width="100%" height="80%">
+                     <div class="col-sm-3 image1 ">
+                        <img class="shad" src="images/bmb.jpeg" width="100%" height="80%">
+                          <div class="play">
+                        <img src="images/play%201.png" width="40%">
+                        </div>
                     </div>
                 </div>    
             </div>
+          <div class="section">
+            <span class="head1">Watch in your language</span>
+            </div>
+          <div class="container-fluid">
+                <div class="row1">
+                    
+                    
+                       <img class="seperate" src="images/english.PNG" width="12%" height="80%">
+                        
+                    
+                    
+                        <img class="seperate" src="images/hindi.PNG" width="12%" height="80%">
+                          
+                    
+                     
+                        <img class="seperate" src="images/marathi.PNG" width="12%" height="80%">
+                          
+                    
+                     
+                        <img class="seperate" src="images/telugu.PNG" width="12%" height="80%">
+                          
+                   
+                     
+                        <img class="seperate" src="images/tamil.PNG" width="12%" height="80%">
+                          
+                    
+                     
+                        <img class="seperate" src="images/bengali.PNG" width="12%" height="80%">
+                          
+                   
+                        <img class="seperate" src="images/malyalam.PNG" width="12%" height="80%">
+                          
+                    
+                </div>    
+            </div>
+           <div class="section">
+            <span class="head1">Top Rated</span>
+            </div>
+            <div id="top-rated"class="container">
+                    
+                      <div class="card mb-3">
+  <img class="card-img-top" src="images/avengers.jpg" alt="Card image cap">
+  <div id="bdy5" class="card-body">
+    <h5 class="card-title"><img src="images/play%201.png" width="4%">&nbsp "The Avengers : Marvel Studios"</h5>
+    <p class="card-text"><span id="bdy5-txt" class="text-muted"> 2 hr 33 min |&nbsp 2019 &nbsp; |&nbsp &nbsp 4.3</span></p>
+  </div>
+</div> 
+          </div>   
+                 
+              <div class="section">
+            <span class="head1">Choose by Genere</span>
+            </div>
+          <div class="container-fluid">
+                <div class="row genere">
+                    <div  class="col-sm-3">
+                    
+                       <div id="c1" class="card" >
+                          <img class="card-img-top genere-img" src="images/ddlj2.jpg" alt="Card image cap">
+                          <div id="b1" class="card-body">
+                              <span class="genere-txt">Romance</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div  class="col-sm-3">
+                    
+                       <div id="c2" class="card" >
+                          <img class="card-img-top genere-img" src="images/haraamkhor.jpg" alt="Card image cap">
+                          <div id="b2" class="card-body">
+                              <span class="genere-txt">Drama</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div  class="col-sm-3">
+                    
+                       <div id="c3" class="card">
+                          <img class="card-img-top genere-img" src="images/avenge.jpg" width="100%" height="100%" alt="Card image cap">
+                          <div id="b3" class="card-body">
+                              <span class="genere-txt">Action</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-3" >
+                    
+                       <div id="c4" class="card">
+                          <img class="card-img-top genere-img" src="images/phir%20hera%20feri.jpg" alt="Card image cap">
+                          <div id="b4"class="card-body">
+                              <span class="genere-txt">Comedy</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+          <div class="container-fluid">
+          <button id="see-mre">See more</button>
+          </div>
+    <div class="lower-bar">
+        
+        <div class="container">
+            
+            <div id="social" class="row">
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/fb.PNG"></a>
+                </div>
+                <div class="col-sm-3">            
+                    <a href=""> <img class="floatr" src="images/twitter.PNG"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/imdb.PNG"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/insta.PNG"></a>
+                </div>
+            </div>
+        
+        
+            <div id="about" class="row">
+                <div class="col-sm-3">
+                    <a href="">About Flux</a>
+                </div>
+                <div class="col-sm-3">            
+                    <a href="">Career</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">FAQ</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">Get the App</a>
+                </div>
+            </div>
+    
+       
+            <div id="help" class="row">
+                <div class="col-sm-4">
+                    <a href="">Terms & policies</a>
+                </div>
+                <div class="col-sm-4">            
+                    <a href="">Send Feedback</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div id="brnd-img" class="row">
+                <img src="images/flux.PNG" width="30%">
+            </div>
+        </div>
+    </div>
       </div>
+    
       <script src="ui.js"></script>
   </body>
 </html>
